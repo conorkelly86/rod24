@@ -1,29 +1,21 @@
 ---
-
-import MySiteLayout from "..\layouts\Layout.astro";
+import MySiteLayout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import CardsIndex from "../components/cardsIndex.astro";
-import Footer from "../components/Footer.astro"
+import CardsIndex from "../components/CardsIndex.astro";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props;
 ---
 
 <MySiteLayout title="Home Page">
-	
-	<Hero />
-
-<CardsIndex/>
-
-
-
+    <Hero />
+    <CardsIndex />
 </MySiteLayout>
 
-	
-
-<Footer/>
+<Footer />
 
 <style>
-	body {
-		background-color: white;
-	}
+    body {
+        background-color: white;
+    }
 </style>
