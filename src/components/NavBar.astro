@@ -1,20 +1,38 @@
-<ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="https://ryan10od.github.io/RecipeAstroApi">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/menu">Recipe List</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/meetOurTeam">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/reviews">Testimonials</a>
-    </li>
-   
 
- <style>
-    * {
-        background-color: white;
-    }
- </style>
+<nav class="nav justify-content-end" id="nav-list">
+  <li class="nav-item">
+    <a class="nav-link" href="/RecipeAstroApi/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/RecipeAstroApi/menu">Recipe List</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/RecipeAstroApi/meetOurTeam">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/RecipeAstroApi/reviews">Testimonials</a>
+  </li>
+</nav>
+
+
+<style>
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .nav-item {
+    margin-left: 1rem;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-link.active {
+    font-weight: bold;
+  }
+  * {
+    background-color: white;
+  }
+</style>

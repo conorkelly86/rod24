@@ -1,20 +1,37 @@
-<ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/menu">Recipe List</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/meetourTeam">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://ryan10od.github.io/RecipeAstroApi/reviews">Testimonials</a>
-    </li>
-   
+---
+import MySiteLayout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Search from "../components/Search.astro";
+---
 
- <style>
-    * {
-        background-color: white;
-    }
- </style>
+<MySiteLayout title="Home">
+  
+  <Search />
+
+  <!-- Add your page content here -->
+
+  <Footer />
+</MySiteLayout>
+
+<style>
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-item {
+    margin-left: 1rem;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-link.active {
+    font-weight: bold;
+  }
+  * {
+    background-color: white;
+  }
+</style>
